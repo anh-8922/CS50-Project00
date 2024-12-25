@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>CS50 Project 00: Search Frontend</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../Assets/main.css">
+    </head>
+    <body>
+        <!--Navigation-->
+        <nav>
+            <ul class="info">
+                <li><a href="/cs50_00">Back to Search</a></li>
+            </ul>
+
+        </nav>
+        <!--Content-->
+        <main>
+            <section class="advanced">
+                <form action="https://google.com/search" class="advanced-search">
+                    <div class="cell-group-1">
+                        <h4>Find pages with...</h4>
+                        <p></p>
+                        <h4 style="margin-left: 6em">To do this in the search box.<h4>
+                    </div>
+                   
+                    <div class="cell-group-2">
+                        <p>all these words:</p>
+                        <input name="as_q" type="text">
+                        <p>Type the important words: tri-colour rat terrier</p>
+
+                        <p>this exact word or phrase:</p>
+                        <input name="as_epq" type="text">
+                        <p>Put exact words in quotes: "rat terrier"</p>
+
+                        <p>any of these words:</p>
+                        <input name="as_oq" type="text">
+                        <p>Type OR between all the words
+
+                        <p>none of these words:</p>
+                        <input name="as_eq" type="text">
+                        <p>Put a minus sign just before words that you don't want: -rodent, -"Jack Russell"</p>
+
+                        <p>numbers ranging from:</p>
+                        <div><input name="as_nlo" type="text"><span>to</span><input name="as_nhi" type="text"></div>
+                        <p>Put two full stops between the numbers and add a unit of measurement: 10..35 kg, £300..£500, 2010..2011</p>
+                     
+                    </div>
+                    <input type="submit" value="Advanced Search" class="btn-primary">
+                </form>
+            </section>
+        </main>
+        <footer>
+            <p>CS50_00: Design a front-end for Google Search, Google Image Search, and Google Advanced Search.</p>
+        </footer>
+    </body>
+</html>
