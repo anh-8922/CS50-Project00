@@ -1,15 +1,28 @@
-* {margin: 0; padding: 0; box-sizing: border-box;}
+:root {
+    --primary-color-1: #FFFFFF;
+    --primary-color-2: #afd3f3;
+}
+* {margin: 0; padding: 0; box-sizing: border-box; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;}
 html{background: grey}
-body {background: #ffffff; height: 100vh;}
+body { height: 100vh;}
 
-nav {padding: 0.7em 1em; border-bottom: 1px silver dotted; display: flex; justify-content: space-between;}
+nav {padding: 0.7em 1em; border-bottom: 1px silver dotted; display: flex; justify-content: space-between; background-color: var(--primary-color-1)}
 ul {list-style-type: none; width: 100%; display: flex; flex-flow: row wrap; gap: 1em}
 .search-type {justify-content: flex-end;}
 li a {text-decoration: none;}
 
 
-main {display: flex; height: 100%; }
+main {display: flex; height: 100%; background-color: var(--primary-color-1);}
 section {display: flex; line-height: 2; flex-direction: column; margin: auto }
 .search-bar {width: 100%; line-height: 2; border-radius: 5px; padding: 0 0.5em; margin: 1.5em 0 0.5em}
-.btn-group {margin: auto; width: max-content;}
-.btn-primary {background-color: aquamarine; border: none; padding: 0.3em 0.5em; border-radius: 3px;}
+.btn-group {margin: 0.5em auto; width: max-content;}
+.btn-primary {background-color: var(--primary-color-2); border: none; padding: 0.5em 0.7em; border-radius: 3px; cursor: pointer;}
+.btn-primary:hover {cursor: pointer;}
+
+.advanced-search {display: block; width: 50vw; margin: auto}
+.cell-group-1, .cell-group-2 {display: grid; grid-template-columns: auto auto auto;}
+
+.cell-group-2 {grid-template-columns: auto auto auto; gap: 1.5em}
+input {}
+
+footer {background-color: var(--primary-color-1); border-top: 1px silver dotted; padding: 1.5em 5em; text-align: center; }
