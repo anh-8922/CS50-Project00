@@ -16,7 +16,7 @@ main {display: flex; height: 100%; background-color: var(--primary-color-1);}
 section {display: flex; line-height: 2; flex-direction: column; margin: auto }
 .search-bar {width: 100%; line-height: 2; border-radius: 5px; padding: 0 0.5em; margin: 1.5em 0 0.5em}
 .btn-group {margin: 0.5em auto; width: max-content;}
-.btn-primary {background-color: var(--primary-color-2); border: none; padding: 0.5em 0.7em; border-radius: 3px; cursor: pointer;}
+.btn-primary {background-color: #afd3f3; border: none; padding: 0.5em 0.7em; border-radius: 3px; cursor: pointer;}
 .btn-primary:hover {cursor: pointer;}
 
 .advanced-search {display: block; width: 50vw; margin: auto}
